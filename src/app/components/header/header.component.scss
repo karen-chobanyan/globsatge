@@ -1,0 +1,142 @@
+@import '../../../variable';
+
+::ng-deep .mat-menu-panel{
+    border: none;
+}
+::ng-deep .mat-menu-content:not(:empty){
+    padding: 0 !important;
+}
+.notification{
+    background: #fff;
+    h4{
+        text-align: center;
+        color: #038e95;
+        font-size: 18px;
+        padding: 6px 0;
+     }
+     .read-0 {
+        background: #ebf7ff;
+     }
+     .notify-count{
+        padding: 1px 0;
+         p{
+             font-size: 14px;
+             padding: 10px;
+             margin-bottom: 0;
+             a{
+                 color: $color-blue;
+             }
+         }
+         img{
+             width: 50px;
+             border-radius: 100%;
+             margin: 4px 6px;
+         }
+         .notify-img{
+             width: 25%;
+             float: left;
+         }
+     } 
+}
+.menu-block{
+    padding-top: 44px;
+    padding-left: 30px;
+    padding-right: 30px;
+    .menu{
+        text-align: right;
+        padding-top: 4px;
+        ul{
+            padding: 0;
+            position: relative;
+            li{
+                display: inline-block;
+                padding-right: 4px;
+                button{
+                 background: $color-green;
+                 padding: 6px 0;
+                 border-radius: 4px;
+                 border: none;
+                 font-size: 14px;
+                 width: 40px;
+                 color: #fff;
+                 transition: 0.4s;
+                 cursor: pointer;
+                }
+              mat-form-field{
+                    ::ng-deep .mat-select-value{
+                        display: none;
+                    }
+                    ::ng-deep .mat-select-arrow-wrapper{
+                        display: none;
+                    }
+                }
+            }
+            .notify{
+                font-size: 16px;
+            }
+            .relative-length{
+                position: relative;
+                cursor: pointer;
+            }
+            .notify-length{
+                color: #880606;
+                position: absolute;
+                bottom: 11px;
+                right: 21px;
+                z-index: 9999;
+                font-size: 9px;
+            }
+        }
+        
+        .En{
+            background: url("/assets/imgs/gb.svg") no-repeat;
+            width: 40px;
+            max-width: 100%;
+            background-size: 100%;
+        }
+        .Ru{
+            background: url('/assets/imgs/ru.svg') no-repeat;
+            width: 40px;
+            height: 30px;
+            max-width: 100%;
+            background-size: 100%;
+        }
+        .mat-form-field{
+            text-align: right;
+            width: 50px;
+            left: 20px;
+        }
+     }
+     .top{
+        position: fixed;
+        bottom: 40px;
+        right: 30px;
+        cursor: pointer;
+        background: url(/assets/imgs/baseline.png) no-repeat;
+        border-radius: 100%;
+        width: 40px;
+        height: 40px;
+        color: #fff;
+        outline: none;
+        border: 2px solid #95c800;
+        background-color: #95c800;
+    }
+    .top:hover{
+        opacity: 0.5;
+    }
+    }
+ 
+
+ @media only screen and (max-width: 767px) {
+    .menu-block{
+        .logo{
+            width: 30%;
+        } 
+        .menu{
+            width: 70%;
+        }
+    }
+    
+    
+  
+}
